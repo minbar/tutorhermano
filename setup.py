@@ -13,7 +13,7 @@ def load_readme():
 def load_about():
     about = {}
     with io.open(
-        os.path.join(HERE, "tutorindigo", "__about__.py"),
+        os.path.join(HERE, "tutorhermano", "__about__.py"),
         "rt",
         encoding="utf-8",
     ) as f:
@@ -25,12 +25,12 @@ ABOUT = load_about()
 
 
 setup(
-    name="tutor-indigo",
+    name="tutor-hermano",
     version=ABOUT["__version__"],
-    url="https://github.com/overhangio/tutor-indigo",
+    url="https://github.com/minbar/tutorhermano",
     project_urls={
         "Documentation": "https://docs.tutor.edly.io/",
-        "Code": "https://github.com/overhangio/tutor-indigo",
+        "Code": "https://github.com/minbar/tutorhermano",
         "Issue tracker": "https://github.com/overhangio/tutor-indigo/issues",
         "Community": "https://discuss.openedx.org",
     },
@@ -46,7 +46,7 @@ setup(
     python_requires=">=3.8",
     install_requires=["tutor>=17.0.0,<18.0.0", "tutor-mfe>=17.0.0,<18.0.0"],
     extras_require={"dev": "tutor[dev]>=17.0.0,<18.0.0"},
-    entry_points={"tutor.plugin.v1": ["indigo = tutorindigo.plugin"]},
+    entry_points={"tutor.plugin.v1": ["indigo = tutorhermano.plugin"]},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",

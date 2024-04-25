@@ -1,7 +1,7 @@
 variables:
-    TUTOR_PLUGIN: indigo
+    TUTOR_PLUGIN: hermano
     TUTOR_EXTRA_ENABLED_PLUGINS: mfe
-    TUTOR_PYPI_PACKAGE: tutor-indigo
+    TUTOR_PYPI_PACKAGE: tutor-hermano
     TUTOR_IMAGES: openedx mfe
     GITHUB_REPO: overhangio/tutor-indigo
 
