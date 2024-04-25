@@ -86,7 +86,7 @@ def _override_openedx_docker_image(
     if openedx_image:
         items.append(("DOCKER_IMAGE_OPENEDX", f"{openedx_image}-indigo"))
     if mfe_image:
-        items.append(("MFE_DOCKER_IMAGE", f"{mfe_image}-hermano"))
+        items.append(("MFE_DOCKER_IMAGE", f"{mfe_image}-indigo"))
     return items
 
 
